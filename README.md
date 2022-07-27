@@ -21,7 +21,7 @@
 
 ### Links
 
-- Solution URL: (https://product-preview-card-component-weld-eta.vercel.app/)
+- Solution URL: (https://intro-section-with-dropdown-navigation-steel.vercel.app/)
 
 ## My process
 
