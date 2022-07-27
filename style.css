@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Epilogue', sans-serif;
+    background-color: hsl(0, 0%, 98%);
+    font-size: 18px;
+}
+
+ul {
+    list-style: none;
+    font-size: 14px;
+    color: hsl(0, 0%, 41%);
+}
+
+ul li {
+    position: relative;
+}
+
+p {
+    font-size: 14px;
+    color: hsl(0, 0%, 41%);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    padding: 1.6rem 2.4rem;
+}
+
+header nav {
+    display: flex;
+    gap: 50px;
+}
+
+li ul {
+    position: absolute;
+    padding: 1rem;
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 3px 3px 8px 3px rgba(59, 51, 51, 0.3);
+    display: none;
+    gap: 10px;
+    flex-direction: column;
+    top: 30px;
+    border-radius: 8px;
+    min-width: 110px;
+}
+
+ul li:first-child ul {
+    right: 5px;
+}
+
+li ul li {
+    display: flex;
+    gap: 10px;
+}
+
+li span {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+li span:hover {
+    color: hsl(0, 0%, 8%);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+}
+
+.sign {
+    display: flex;
+    align-items: center;
+    gap: 1rem
+}
+
+.sign button {
+    border: none;
+    padding: 0.6rem 1.2rem;
+    background-color: transparent;
+    color: hsl(0, 0%, 41%);
+    cursor: pointer;
+}
+
+.sign button:hover {
+    color: hsl(0, 0%, 8%);
+    transition: all 0.5s;
+}
+
+.sign button:last-child {
+    border: 1px solid hsl(0, 0%, 8%);
+    border-radius: 10px;
+}
+
+.side-img img {
+    width: 100%;
+    height: auto;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 1rem 10rem 5rem;
+}
+
+section div h1 {
+    font-size: 60px;
+    color: hsl(0, 0%, 8%);
+}
+
+section div:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logos {
+    display: flex;
+    gap: 2.4rem;
+}
+
+.p {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.title {
+    margin-top: 30px;
+}
+
+.btnLearn {
+    padding: 1rem 1.4rem;
+    border-radius: 10px;
+    border: none;
+    background-color: hsl(0, 0%, 8%);
+    font-weight: bold;
+    color: hsl(0, 0%, 98%);
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.btnLearn:hover {
+    background-color: transparent;
+    border: 1px solid hsl(0, 0%, 8%);
+    transition: all 0.5s;
+    color: hsl(0, 0%, 8%);
+}
+
+.menu-btn {
+    display: none;
+}
+
+.menu-btn button {
+    border: none;
+    background-color: transparent;
+}
+
+.test {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.btnClose {
+    display: none;
+}
+
+.btnClose button {
+    border: none;
+    background-color: transparent;
+}
+
+@media (max-width: 375px) {
+    body {
+        font-size: 14px;
+        position: relative;
+    }
+    .btnClose {
+        display: flex;
+        padding: 0px 2rem;
+        justify-content: end;
+        padding-bottom: 2rem;
+    }
+    .nav {
+        position: absolute;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100vw;
+        min-height: 100vh;
+        flex-direction: column;
+        justify-content: start;
+        background-color: rgba(0, 0, 0, 0.5);
+        transform: translateX(100%);
+        transition: transform 0.5s;
+    }
+    .menu-btn {
+        display: block;
+    }
+    section {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 0;
+        margin-top: 100px;
+    }
+    .sidecontent {
+        gap: 40px;
+        padding: 24px 0px;
+        align-items: center;
+    }
+    .title {
+        margin-top: 0px;
+        display: flex;
+        font-size: 18px;
+        align-items: center;
+    }
+    section div h1 {
+        font-size: 40px;
+        color: hsl(0, 0%, 8%);
+    }
+    .p {
+        text-align: center;
+    }
+    .logos {
+        gap: 1.2rem;
+    }
+    .logos img {
+        width: 60px;
+        height: auto;
+    }
+    header {
+        padding: 0;
+        position: relative;
+    }
+    nav {
+        position: absolute;
+        width: 100%;
+        justify-content: space-around;
+    }
+    .nav-menu {
+        flex-direction: column;
+        padding-left: 1rem;
+        align-items: flex-start;
+    }
+    .sign {
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+    .test {
+        flex-direction: column;
+        background-color: hsl(0, 0%, 100%);
+        min-height: 100vh;
+        justify-content: start;
+        padding-top: 3rem;
+    }
+    .dropdown-menu {
+        position: relative;
+        box-shadow: none;
+        top: 0px;
+    }
+    .logo,
+    .menu-btn {
+        margin-top: 30px;
+    }
+}
